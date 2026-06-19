@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索 - 星辰影视</title>
+    <meta name="description" content="星辰影视站内搜索支持按片名、类型、地区、年份和标签查找高清影视详情页。">
+    <meta name="keywords" content="日韩,最新电影,免费观看,高清播放,热门资源,小众,高分,搜索">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/search-index.js" defer></script>
+</head>
+<body>
+<div class="site-shell">
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a class="brand" href="./index.html" aria-label="星辰影视">
+                    <span class="brand-mark">星</span>
+                    <span>
+                        <span class="brand-title">星辰影视</span>
+                        <span class="brand-subtitle">日韩热播 · 高清播放</span>
+                    </span>
+                </a>
+                <nav class="main-nav" aria-label="主导航">
+                    <a href="./index.html" class="">首页</a>
+                    <a href="./categories.html" class="">分类</a>
+                    <a href="./ranking.html" class="">热播榜</a>
+                    <a href="./search.html" class="active">搜索</a>
+                </nav>
+                <form class="header-search" action="./search.html" method="get">
+                    <input type="search" name="q" placeholder="搜索片名、类型、年份" aria-label="搜索影片">
+                    <button type="submit">搜</button>
+                </form>
+                <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">☰</button>
+            </div>
+            <div class="mobile-nav" data-mobile-nav>
+                <a href="./index.html" class="">首页</a>
+                <a href="./categories.html" class="">分类</a>
+                <a href="./ranking.html" class="">热播榜</a>
+                <a href="./search.html" class="active">搜索</a>
+                <form class="header-search" action="./search.html" method="get">
+                    <input type="search" name="q" placeholder="搜索片名、类型、年份" aria-label="搜索影片">
+                    <button type="submit">搜</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">搜索</span>
+                <h1>星辰影视影片搜索</h1>
+                <p>输入片名、类型、地区、年份或标签，即可在站内片库中查找对应详情页。</p>
+                <form class="search-panel" action="./search.html" method="get">
+                    <input id="searchInput" type="search" name="q" placeholder="例如：日韩、悬疑、2024、电影" aria-label="搜索关键词">
+                    <button class="btn btn-primary" type="submit">搜索</button>
+                </form>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="movie-grid search-results" id="searchResults"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>星辰影视</strong>
+                <div>免费观看 · 高清播放 · 热播剧集 · 高分推荐</div>
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">首页</a>
+                <a href="./categories.html">分类</a>
+                <a href="./ranking.html">热播榜</a>
+                <a href="./search.html">搜索</a>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="./assets/site.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
